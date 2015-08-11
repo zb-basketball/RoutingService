@@ -12,18 +12,18 @@ class InteractWithService(object):
         pass
 
 
-class Service(InteractWithRouting,InteractWithService):
-    def __init__(self,style1,style2):
- 	self.From_routing = InteractWithRouting(style1)
-	self.To_routing = InteractWithRouting(style2)
- 	pass
+class Service(InteractWithRouting, InteractWithService):
+    def __init__(self, style1, style2):
+        self.From_routing = InteractWithRouting(style1)
+        self.To_routing = InteractWithRouting(style2)
+        pass
 
     def from_routing(self):
         self.From_routing.from_routing()
-	pass
+        pass
 
     def to_routing(self):
-	self.To_routing.to_routing()
+        self.To_routing.to_routing()
         pass
 
     def to_service(self):

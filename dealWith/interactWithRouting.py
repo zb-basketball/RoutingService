@@ -1,20 +1,20 @@
 class InteractWithRouting(object):
-    def __init__(self,style):
-	self.style = style
+    def __init__(self, style):
+        self.style = style
         if self.style == 'file':
-	    self.DealWith = FileDealWith()
-	elif self.style == 'TCP':
-	    self.DealWith = TCPDealWith()
-	elif self.style == 'HTTP':
-	    self.DealWith = HTTPDealWith()
-	pass
+            self.DealWith = FileDealWith()
+        elif self.style == 'TCP':
+            self.DealWith = TCPDealWith()
+        elif self.style == 'HTTP':
+            self.DealWith = HTTPDealWith()
+        pass
 
     def from_routing(self):
-	self.DealWith.from_routing()
+        self.DealWith.from_routing()
         pass
 
     def to_routing(self):
-	self.DealWith.to_routing()
+        self.DealWith.to_routing()
         pass
 
 
@@ -23,11 +23,11 @@ class TCPDealWith(InteractWithRouting):
         pass
 
     def from_routing(self):
-	print 'tcp from routing'
+        print 'tcp from routing'
         pass
 
     def to_routing(self):
-	print 'tcp to routing'
+        print 'tcp to routing'
         pass
 
 
@@ -36,11 +36,11 @@ class HTTPDealWith(InteractWithRouting):
         pass
 
     def from_routing(self):
-	print 'http from routing'
+        print 'http from routing'
         pass
 
     def to_routing(self):
-	print 'http to routing'
+        print 'http to routing'
         pass
 
 
@@ -49,9 +49,9 @@ class FileDealWith(InteractWithRouting):
         pass
 
     def from_routing(self):
-	print 'file from routing'
+        print 'file from routing'
         pass
 
     def to_routing(self):
-	print 'file to routing'
+        print 'file to routing'
         pass
