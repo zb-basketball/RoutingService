@@ -53,3 +53,14 @@
 #        - choices: a list of valid values of the option.
 #
 #        - desc: a description of the option
+
+#this module is used to validate whether the input from agent is legal!!!!
+
+class Validate(object):
+    
+    def __init__(self, plugin_tuple, plugin_docstring):
+        self.plugin_tuple = plugin_tuple
+        self.plugin_docstring = plugin_docstring
+    
+    def validate(self):
+        
